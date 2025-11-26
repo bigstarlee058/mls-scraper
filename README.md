@@ -36,7 +36,7 @@ This public MLS data is the raw material for any serious real estate strategy. T
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/triposat/mls-scraper.git
+git clone https://github.com/brightdata/mls-scraper.git
 cd mls-scraper
 ```
 
@@ -84,7 +84,7 @@ def fetch_html(url):
     # ... (error handling)
 ```
 
-This script successfully handles pagination and extracts key details. See the [full script here](https://github.com/triposat/mls-scraper/blob/main/scrapers/foreclosures.py).
+This script successfully handles pagination and extracts key details. See the [full script here](https://github.com/brightdata/mls-scraper/blob/main/scrapers/foreclosures.py).
 
 ### Usage
 ```bash
@@ -118,7 +118,7 @@ Sample output (*data/foreclosures.json*):
 ]
 ```
 
-See the [full sample output here](https://github.com/triposat/mls-scraper/blob/main/data/foreclosures.json).
+See the [full sample output here](https://github.com/brightdata/mls-scraper/blob/main/data/foreclosures.json).
 
 **Takeaway** – this script works perfectly for this simple site. Now, let's see what happens when we use this script on a more advanced target.
 
@@ -176,7 +176,7 @@ def fetch_html(url):
         )
     # ...
 ```
-See the [full script here](https://github.com/triposat/mls-scraper/blob/main/scrapers/communities.py).
+See the [full script here](https://github.com/brightdata/mls-scraper/blob/main/scrapers/communities.py).
 
 ### Usage
 ```bash
@@ -210,7 +210,7 @@ Sample output (*data/communities.json*):
   }
 ]
 ```
-See the [full sample output here](https://github.com/triposat/mls-scraper/blob/main/data/communities.json).
+See the [full sample output here](https://github.com/brightdata/mls-scraper/blob/main/data/communities.json).
 
 **Takeaway** – this setup defeats IP and browser fingerprinting. But what happens when the site relies on JavaScript and interactive CAPTCHAs?
 
@@ -223,7 +223,7 @@ The logical next step, and the one most developers try, is to use a local Playwr
 This is the "wall" we've been talking about.
 
 We've included the script for this exact approach:
-[scrapers/homes_proxy.py](https://github.com/triposat/mls-scraper/blob/main/scrapers/homes_proxy.py)
+[scrapers/homes_proxy.py](https://github.com/brightdata/mls-scraper/blob/main/scrapers/homes_proxy.py)
 
 **Go ahead and run it.**
 
@@ -314,7 +314,7 @@ def scrape_all_pages(base_url, max_pages=None):
                 # ...
 ```
 
-See the [full script here](https://github.com/triposat/mls-scraper/blob/main/scrapers/homes_browser.py).
+See the [full script here](https://github.com/brightdata/mls-scraper/blob/main/scrapers/homes_browser.py).
 
 ### Usage
 ```bash
@@ -349,7 +349,7 @@ Sample output (*data/homes_browser.json*):
 ]
 ```
 
-See the [full sample output here](https://github.com/triposat/mls-scraper/blob/main/data/homes_browser.json).
+See the [full sample output here](https://github.com/brightdata/mls-scraper/blob/main/data/homes_browser.json).
 
 ## Choosing your path – the "build vs. buy" choice
 
